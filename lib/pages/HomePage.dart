@@ -41,6 +41,7 @@ Instructions:
 1. Upload a ZIP file containing all your source files and header files.
 2. Press the Create ZIP with CBP File button to download the new ZIP containing the .cbp file.
 Please note that this tool creates only one project at a time, so don't upload a zip containing multiple standalone projects!
+The name of the project will be the same as the name of the .zip file that you upload.
 
                 ''',
                 style: TextStyle(fontSize: 20, color: Colors.black),
