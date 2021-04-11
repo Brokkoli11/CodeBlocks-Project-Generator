@@ -123,9 +123,9 @@ Please note that this tool creates only one project at a time, so don't upload a
   }
 
   void _processZipFile() async {
-    String CBPFile = CbpCreator.createCBP(_pickedFile.name, _headersAndSources);
-
     String projectName = _pickedFile.name.split('.')[0];
+
+    String CBPFile = CbpCreator.createCBP(projectName, _headersAndSources);
 
     ArchiveFile a =
         ArchiveFile(projectName + ".cbp", 5000, utf8.encode(CBPFile));
